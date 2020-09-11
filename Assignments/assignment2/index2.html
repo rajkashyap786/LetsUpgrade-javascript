@@ -1,0 +1,46 @@
+
+<!--QUES1 create a webpage containing an image and 3 buttons
+A . On click of the second button change the existing image to a new image
+B . On click of the third button change it once again
+C . On click of first button, first image should come back-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+  img{
+    width:200px;
+    height:200px;
+  }
+ 
+  </style>
+</head>
+<body>
+  <div class="bound">
+  <img src="photo/animal.jpg" alt="animal" id="image"><br><br>
+  <button onclick="imagechange2()">button1</button><br><br>
+  <button onclick="imagechange()">button2</button><br><br>
+  <button onclick="imagechange1()">button3</button><br><br>
+  </div>
+
+  <!--QUES2 Create a webpage conataining two input fields and a buttons
+ A . Write something in first input 
+ B . On click of the button  , the content of input one should be copied in  the second input  -->
+
+ <p>ENTER TEXT</p><input type="text" id="entertxt"><br>
+ <p>Copied text</p><input type="text" id="copiedtxt"><br><br>
+ <button onclick="copytext()">click me</button><br><br>
+
+<!--QUES3 Create an array of objects having the following properties
+ A. {name(string),age(number),country(string),hobbies array(string[])}
+ B. Write a function to display all the objects on the console -->
+
+<!--QUES4 Following the third question
+A. Write a function to display all the objects having age less than 30.
+B. Write a function to display all tjhe objects having country india. -->
+
+  <script src="function.js"></script>
+</body>
+</html>
