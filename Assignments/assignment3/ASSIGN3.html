@@ -1,0 +1,78 @@
+ <!-- QUES 2. Create a blank array and later on create a add bus functionality bus object contains{name,source,destination,number,passenger capacity}
+ A. A form to add new bus.
+ B. Display data in table format.
+ C. Search by source and destination.
+ D. Data should be stored permanently in localstorage. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style type="text/css">
+   *{
+     margin:0px;
+     padding: 0px;
+   }
+   .detail{
+     width: 80%;
+     height: 100vh;
+     background-color: burlywood;
+     margin-left: 10%;
+   }
+   h1{
+     text-align: center;
+   }
+   table{
+     margin-top: 10px;
+     width: 100%;
+   }
+   th, td{
+      width: 200px;
+      height: 30px;
+      text-align: center;
+   }
+   input{
+     width: 200px;;
+     height:40px; 
+     text-indent: 10px;
+   }
+   button{
+     padding: 5px;
+   }
+  </style>
+ </head>
+ <body>
+   <div class="detail">
+     <h1>BUS MANAGEMENT</h1>
+     <div class="form">
+       <form onsubmit="addbus(event)">
+       <input type="text" required placeholder="BusName" id="name">
+       <input type="text" required placeholder="Source" id="source">
+       <input type="text" required placeholder="Destination" id="destination">
+       <input type="number" required placeholder="BusNumber" id="number">
+       <input type="number" required placeholder="Passenger capacity" id="passCap">
+       <button type="submit">Add Bus</button>
+        </form><br>
+      </div>
+      <div class="search">
+        <label>Search by source and destination</label>
+        <input type="text" placeholder="search from here" onkeyup="searchyourbus()" id="searchbus">
+      </div>
+     <table border="1" cellspacing="0">
+       <thead>
+         <tr>
+           <th>Srno</th>
+           <th>Name</th>
+           <th>Source</th>
+           <th>Destination</th>
+           <th>Bus Number</th>
+           <th>Passenger Capacity</th>
+         </tr>
+       </thead>
+       <tbody class="tablecontent"></tbody>
+     </table>
+   </div>
+   <script src="ASSIGN3.js"></script>
+ </body>
+ </html>
