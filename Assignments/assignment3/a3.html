@@ -1,0 +1,73 @@
+<!-- create a array containing 5 objects with properties {name,age,city,salary}
+A. Display all the objects in a table.
+B. Create a search functionality for name and city.
+C. Delete button to delete records.
+D. Data is not permanent.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  .data{
+         width: 80%;
+         height:105vh;
+         background-color: rgb(210, 210, 219);
+         margin-left: 10%;
+  }
+  h1{
+    text-align: center;
+  }
+  table{
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+  }
+  th,td{
+    text-align: center;
+  }
+  .form{
+    margin-top: 20px;
+    }
+    input{
+      text-indent: 10px;
+      width:200px;
+      height: 30px;
+    }
+    button{
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="data">
+    <h1>Table</h1>
+    <div class="form">
+      <label>Search by name and city :</label>
+      <input type="text" placeholder="start search here" onkeyup="searchname()" id="search"><br><br>
+
+    </div>
+    <table border="1" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Srno</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Salary</th> 
+          <th>Action</th>            
+        </tr>
+      </thead>
+      <tbody class="tablecontent">
+
+      </tbody>
+    </table>
+    <script src="a3.js"></script>
+  </div>
+</body>
+</html>
